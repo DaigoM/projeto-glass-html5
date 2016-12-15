@@ -6,6 +6,7 @@
 			Tudo Sobre Google Glass
 		</title>
 		<link rel="stylesheet" href="_css/estilo.css" /> <!-- pode omitir parametro type -->
+		<link rel="stylesheet" href="_css/specs.css" />
 	</head>
 	<script language="javascript" src="_javascript/funcoes.js"></script>
 	<body>
@@ -16,7 +17,6 @@
 				<h2>A revolução do Google está chegando</h2>
 				</hgroup>
 				<img id="icone"src="_imagens/especificacoes.png">
-			</header>
 <nav id="menu">
 	<h1>Menu Principal</h1>
 		<ul type="square">		<!--ol: em parametro type, somente 1,a,i; em start,somente numericos -->
@@ -28,15 +28,43 @@
 			<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
 		</ul>
 </nav> 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+</header>
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+<hgroup>
+<h3>Glass > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Especificações</h3>
+<h1>Raio-X no Google Glass</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+</hgroup>
+</header>
+
 
 Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
 
-[AQUI ENTRA UMA IMAGEM]
+<section id="conteudo">
+	<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+	<map name="meumapa">
+	<!-- mapeamento de conteudo. Neste caso, de imagens -->
+		<area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" /> 
+		<!-- shape: o formato geometrico a qual a area tera. No caso, retangular.-->
+		<!-- coords: num software de edicao de imagem, busca a coordenada do canto esquerdo superior e do canto direito inferior-->
+		<!-- href: referencia a pagina e o seu id do article(pode ser de qualquer tag) -->
+		<!-- target: aonde sera aberto a pagina ou arquivo -->
+		<area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" />
+		<!-- coords:o centro da circunferencia e o raio do circulo. -->
+		<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" />
+		<area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" />
+		<!-- shape:poly. -->
+		<!-- coords: Nao ha limites para as coordenadas. No minimo tres. Neste caso, quatro cantos do poligono.-->
+	</map>
+	<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+	<!-- abrir um outro arquivo, no caso uma pagina, dentro de uma pagina. -->
+</section>
 
+</section>
 <footer id="rodape">
 <p>Copyright&copy; 2013 - by Gustavo Guanabara </br>
 <a href="">Facebook</a> | <a href="">Twitter</a></p>
